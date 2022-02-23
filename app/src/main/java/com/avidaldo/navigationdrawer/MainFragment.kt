@@ -27,9 +27,9 @@ class MainFragment : Fragment() {
         /* Obtenemos el navControler que permite utilizar las acciones de navegación definidas en el nav_graph */
         val navController = findNavController()
 
-        binding.btnMainToDest1.setOnClickListener { navController.navigate(R.id.action_nav_main_to_nav_dest1) }
-        binding.btnMainToDest2.setOnClickListener { navController.navigate(R.id.action_nav_main_to_nav_dest2) }
-        binding.btnMainToDest3.setOnClickListener { navController.navigate(R.id.action_nav_main_to_nav_dest3) }
+        binding.btnMainToDest1.setOnClickListener { navController.navigate(MainFragmentDirections.actionNavMainToNavDest1()) }
+        binding.btnMainToDest2.setOnClickListener { navController.navigate(MainFragmentDirections.actionNavMainToNavDest2()) }
+        binding.btnMainToDest3.setOnClickListener { navController.navigate(MainFragmentDirections.actionNavMainToNavDest3()) }
     }
 
     override fun onDestroyView() {

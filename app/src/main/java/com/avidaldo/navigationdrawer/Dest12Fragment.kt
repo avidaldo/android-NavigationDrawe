@@ -27,7 +27,7 @@ class Dest12Fragment : Fragment() {
         val navController = Navigation.findNavController(view)
 
         binding.btnToDest13.setOnClickListener {
-            navController.navigate(R.id.action_nav_dest12_to_nav_dest13)
+            navController.navigate(Dest12FragmentDirections.actionNavDest12ToNavDest13())
         }
 
     }
